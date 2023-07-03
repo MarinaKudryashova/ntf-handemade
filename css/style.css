@@ -171,7 +171,7 @@ body {
   padding-top: 85px;
 }
 .section-title {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   font-style: italic;
   font-weight: 600;
   font-size: 40px;
@@ -271,6 +271,7 @@ body {
   padding-left: 105px;
   font-style: normal;
   font-weight: 800;
+  text-transform: none;
 }
 .promo__descr {
   margin-bottom: 34px;
@@ -350,24 +351,24 @@ body {
   position: absolute;
   inset: -1px;
   border-radius: 40px;
-  /* background: linear-gradient(to right, #2dbbda, #d9dc31); */
   background: var(--gradient-color);
   z-index: -1;
 }
 .ntf-card__img {
-  margin-bottom: 10px;
+  margin-bottom: 18px;
 }
 .ntf-card__title {
-  margin-bottom: 6px;
+  margin-bottom: 12px;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 44px;
+  font-size: 20px;
+  line-height: 34px;
   color: var(--white-color);
 }
 .ntf-card__descr {
+  max-width: 550px;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 34px;
+  font-size: 16px;
+  line-height: 28px;
   /* text-align: left; */
   text-align: center;
   color: var(--white-color);
