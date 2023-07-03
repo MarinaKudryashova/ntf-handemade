@@ -242,7 +242,8 @@ body {
 }
 .promo__container {
   display: flex;
-  align-items: center;
+  align-items: start;
+  /* align-items: center; */
 }
 .promo-content {
   position: relative;
@@ -314,6 +315,7 @@ body {
 .promo__img {
   max-width: 323px;
 }
+
 /* --ntf-art-- */
 .ntf {
   margin-bottom: 100px;
