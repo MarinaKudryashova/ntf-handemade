@@ -311,6 +311,9 @@ body {
 .promo__social-text {
   color: currentColor;
 }
+.promo__img {
+  max-width: 323px;
+}
 /* --ntf-art-- */
 .ntf {
   margin-bottom: 100px;
