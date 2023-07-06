@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFT Hand Made</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
@@ -14,7 +16,7 @@
   <header class="header">
     <div class="header__container container">
       <a href="#" class="header__logo logo link-reset" tabindex="-1">
-        <svg class="logo__icon" width="177" height="54">
+        <svg class="logo__icon" width="188" height="60">
           <use xlink:href="img/sprite.svg#logo"></use>
         </svg>
       </a>
@@ -29,13 +31,13 @@
       <nav class="header__menu">
         <ul class="header__menu-list list-reset">
           <li class="header__menu-item">
-            <a href="#" class="hader__menu-link link link-reset">NFT искусство</a>
+            <a href="#" class="hader__menu-link link link-reset">О&nbsp;проекте</a>
           </li>
           <li class="header__menu-item">
             <a href="#" class="hader__menu-link link link-reset">Мастерские</a>
           </li>
           <li class="header__menu-item">
-            <a href="#" class="hader__menu-link link link-reset">О нас</a>
+            <a href="#" class="hader__menu-link link link-reset">О&nbsp;нас</a>
           </li>
           <li class="header__menu-item">
             <a href="#" class="hader__menu-link link link-reset">Контакты</a>
@@ -48,21 +50,29 @@
   <main class="main">
     <section class="promo section-ofset">
       <div class="promo__container container">
-        <div class="promo-content">
+        <div class="promo__content">
           <h1 class="promo__title margin-reset"><span class="promo__title promo__title--ofset">Hand&nbsp;Made </span>сувениры</h1>
-          <p class="promo__descr margin-reset">Добро пожаловать в&nbsp;NFT-Hand-Made&nbsp;&mdash; уникальный магазин на&nbsp;OpenSea. Здесь вы&nbsp;можете не&nbsp;только приобрести крутой сувенир ручной работы в&nbsp;виде деревянного bitcoin, но&nbsp;и&nbsp;помочь людям с&nbsp;ограниченными возможностями. Ведь все изделия, представленные в&nbsp;данном разделе, сделаны их&nbsp;талантливыми руками.</p>
+          <!-- <p class="promo__descr margin-reset">Добро пожаловать в&nbsp;NFT Hand Made&nbsp;&mdash; уникальный магазин на&nbsp;OpenSea. Здесь вы&nbsp;можете не&nbsp;только приобрести крутой сувенир ручной работы в&nbsp;виде деревянного bitcoin, но&nbsp;и&nbsp;помочь людям с&nbsp;ограниченными возможностями. Ведь все изделия, представленные в&nbsp;данном разделе, сделаны их&nbsp;талантливыми руками.</p> -->
+          <p class="promo__descr margin-reset">Здесь приобретая крутой сувенир ручной работы вы&nbsp;помогаете людям с&nbsp;ограниченными возможностями. Ведь все изделия, представленные в&nbsp;данном разделе, сделаны их&nbsp;талантливыми руками.</p>
           <div class="promo__backlinks">
-            <a href="#" target="_blank" class="promo__btn btn link-reset">Пернейти в&nbsp;магазин</a>
+            <a href="https://opensea.io/NFT-Hand-Made" target="_blank" class="promo__btn btn link-reset">Перейти в&nbsp;магазин</a>
             <ul class="promo__social-list list-reset">
               <li class="promo__social-item">
-                <a href="#" target="_blank" class="header__social-link link link-reset" aria-label="Перейти на нашу страницу в facebook">
+                <a href="https://twitter.com/NFT_Hend_Made" target="_blank" class="promo__social-link link link-reset" aria-label="Перейти на нашу страницу в twitter">
+                  <svg class="promo__social-icon" width="35" height="35">
+                    <use xlink:href="img/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="promo__social-item">
+                <a href="https://www.facebook.com/altai.antonenko" target="_blank" class="header__social-link link link-reset" aria-label="Перейти на нашу страницу в facebook">
                   <svg class="promo__social-icon" width="35" height="35">
                     <use xlink:href="img/sprite.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="promo__social-item">
-                <a href="#" target="_blank" class="promo__social-link link link-reset" aria-label="Перейти на нашу страницу в instagram">
+                <a href="https://www.instagram.com/altai_bez_ogranichenj" target="_blank" class="promo__social-link link link-reset" aria-label="Перейти на нашу страницу в instagram">
                   <svg class="promo__social-icon" width="35" height="35">
                     <use xlink:href="img/sprite.svg#instagram"></use>
                   </svg>
@@ -75,17 +85,11 @@
                   </svg>
                 </a>
               </li>
-              <li class="promo__social-item">
-                <a href="#" target="_blank" class="promo__social-link link link-reset" aria-label="Перейти на нашу страницу в twitter">
-                  <svg class="promo__social-icon" width="35" height="35">
-                    <use xlink:href="img/sprite.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
+
             </ul>
           </div>
         </div>
-        <img class="promo__img" src="img/wooden-bicoint.png" alt="деревянный биткоин">
+        <img class="promo__img" src="img/wooden-bicoint.png" alt="деревянный биткоин" width="275" height="318">
         <!-- <div class="promo__slider promo-slider">
           <div class="promo-slider__wrapper">
             <div class="promo-slider__slide">
@@ -100,9 +104,10 @@
             <div class="promo-slider__slide">
               <img class="promo__img" src="https://swiperjs.com/demos/images/nature-4.jpg" alt="деревянный биткоин">
             </div>
+            <div class="swiper-pagination"></div>
           </div>
-        </div>
-        <div thumbsSlider="" class="promo__slider promo-slider">
+        </div> -->
+        <!-- <div thumbsSlider="" class="promo__slider promo-slider__mini">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
@@ -147,14 +152,196 @@
         </ul>
       </div>
     </section>
-    <section class="section">
+    <section class="ntf section-ofset">
+      <div class="ntf__conainer container">
+        <h2 class="ntf__title section-title margin-reset">О&nbsp;проекте</h2>
+        <p class="ntf__descr section-descr margin-reset">
+          Добро пожаловать в NFT Hand Made уникальный магазин на OpenSea.
+          Проект &laquo;Алтай Без Ограничений&raquo; помогает людям с&nbsp;ограниченными возможностями здоровья (ОВЗ) реализовать себя в&nbsp;криптоискусстве и&nbsp;повышать качество своей жизни. Мы&nbsp;сотрудничаем с&nbsp;инвалидами по&nbsp;зрению, по&nbsp;слуху, с&nbsp;семьями, имеющими детей с&nbsp;ментальными нарушениями. Верим, что особенные люди по-особенному талантливые!
+        </p>
+        <ul class="ntf__list list-reset">
+          <li class="ntf__item ntf-card">
+            <img class="ntf-card__img" src="./img/svg/ntf-art-1.svg" alt="" aria-hidden="true" width="50" height="50">
+            <h3 class="ntf-card__title margin-reset">Алтай без ограничений</h3>
+            <p class="ntf-card__descr margin-reset">Проект &laquo;Алтай Без Ограничений&raquo; помогает людям с&nbsp;ограниченными возможностями здоровья (ОВЗ) реализовать себя в&nbsp;криптоискусстве и&nbsp;повышать качество своей жизни.</p>
+          </li>
+          <li class="ntf__item ntf-card">
+            <img class="ntf-card__img" src="./img/svg/ntf-art-2.svg" alt="" aria-hidden="true" width="50" height="50">
+            <h3 class="ntf-card__title margin-reset">Особая мастерская</h3>
+            <p class="ntf-card__descr margin-reset">Это образовательная площадка, на&nbsp;которой работают социальные проекты с&nbsp;людьми с&nbsp;ОВЗ, где учат и&nbsp;учатся творчеству.</p>
+          </li>
+          <li class="ntf__item ntf-card">
+            <img class="ntf-card__img" src="./img/svg/ntf-art-3.svg" alt="" aria-hidden="true" width="50" height="50">
+            <h3 class="ntf-card__title margin-reset">Помочь может каждый</h3>
+            <p class="ntf-card__descr margin-reset">NFT-произведения людей с&nbsp;ограниченными возможностями можно купить прямо здесь и&nbsp;сейчас. Такой формат помощи дает инвалидам возможность не&nbsp;только заниматься творчеством, но&nbsp;и&nbsp;получить статус трудящихся.</p>
+          </li>
+          <li class="ntf__item ntf-card">
+            <img class="ntf-card__img" src="./img/svg/ntf-art-4.svg" alt="" aria-hidden="true" width="50" height="50">
+            <h3 class="ntf-card__title margin-reset">NFT искусство</h3>
+            <p class="ntf-card__descr margin-reset">Это способ социализации, адаптации и&nbsp;встраивания людей с&nbsp;ОВЗ в&nbsp;общество. Маленький, но&nbsp;очень нужный шаг к&nbsp;созданию инклюзивной среды.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section-examp">
       <p class="test-ex" style="margin-bottom: 16px; font-size: 24px; color: grey; text-align: center;">Пример секций изделий по видам (из дерева, из глины, картины, украшения) на этой странице</p>
       <div class="section__conainer container">
         <h2 class="section_title section-title margin-reset">Заголовок раздела</h2>
         <p class="section__descr section-descr margin-reset">Кратое описание Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты. Своих безопасную приставка точках, океана выйти переписали снова несколько свой. </p>
-        <ul class="section__list list-reset">
-          <li class="section__item card">
+        <ul class="section-examp__list list-reset">
+          <li class="section-examp__item card">
             <img class="card__image" src="http://placehold.it/300x236" alt="" aria-hidden="true" width="100%" height="236">
+            <div class="card__content card__ex1">
+              <h3 class="card__title margin-reset">Наименовние сувенира</h3>
+              <div class="card__info">
+                <p class="card__price margin-reset">
+                  <span class="card__price-value">3</span>
+                  <span class="card__price-unit">ETF</span>
+                </p>
+                <a href="#" class="card__btn btn link-reset">Купить</a>
+              </div>
+              <!-- <p class="card__price margin-reset">
+                <span class="card__price-value">3000</span>
+                <span class="card__price-unit">₽</span>
+              </p> -->
+              <!-- <div class="card__links">
+                <a href="#" class="card__btn--primary card__btn btn link-reset">Подробнее</a>
+                <a href="#" class="card__btn btn link-reset">Купить</a>
+              </div> -->
+            </div>
+          </li>
+          <li class="section-examp__item card">
+            <img class="card__image" src="http://placehold.it/300x236" alt="" aria-hidden="true" width="100%" height="236">
+            <div class="card__content card__ex3">
+              <h3 class="card__title margin-reset">Наименовние сувенира</h3>
+              <div class="card__descr">
+                <p class="card__param-item margin-reset">
+                  <span class="card__param-value">Настольный</span>
+                  <span class="card__param-separ"> / </span>
+                  <span class="card__param-value">Просто деревянный</span>
+                </p>
+                <p class="card__param-item margin-reset">
+                  <span class="card__param-name">Размер:</span>
+                  <span class="card__param-value">70 см</span>
+                </p>
+              </div>
+              <div class="card__info">
+                <p class="card__price margin-reset">
+                  <span class="card__price-value">3</span>
+                  <span class="card__price-unit">ETF</span>
+                </p>
+                <a href="#" class="card__btn btn link-reset">Купить</a>
+              </div>
+            </div>
+          </li>
+          <li class="section-examp__item card">
+            <img class="card__image" src="http://placehold.it/300x236" alt="" aria-hidden="true" width="100%" height="236">
+            <div class="card__content card__ex3">
+              <h3 class="card__title margin-reset">Наименовние сувенира</h3>
+              <div class="card__descr">
+                <p class="card__param-item margin-reset">
+                  <span class="card__param-value">Настольный</span>
+                  <span class="card__param-separ"> / </span>
+                  <span class="card__param-value">с оранжевой буквой "B"</span>
+                </p>
+                <p class="card__param-item margin-reset">
+                  <span class="card__param-name">Размер:</span>
+                  <span class="card__param-value">70 см</span>
+                </p>
+              </div>
+              <div class="card__info">
+                <p class="card__price margin-reset">
+                  <span class="card__price-value">3</span>
+                  <span class="card__price-unit">ETF</span>
+                </p>
+                <a href="#" class="card__btn btn link-reset">Купить</a>
+              </div>
+            </div>
+          </li>
+          <li class="section-examp__item card ex4">
+            <img class="card__image" src="http://placehold.it/300x236" alt="" aria-hidden="true" width="100%" height="236">
+            <div class="card__content card__ex4">
+              <h3 class="card__title margin-reset">Наименовние сувенира</h3>
+              <p class="card__descr margin-reset">
+                <span class="card__param-value">Настольный</span>
+                <span class="card__param-separ"> / </span>
+                <span class="card__param-value">C оранжевой буквой "B"</span>
+              </p>
+              <div class="card__info">
+                <p class="card__price margin-reset">
+                  <span class="card__price-value">3</span>
+                  <span class="card__price-unit">ETF</span>
+                </p>
+                <a href="#" class="card__btn btn link-reset">Купить</a>
+              </div>
+            </div>
+            <a href="#" class="card__link link-reset">
+              <span class="card__btn--primary card__btn btn">Подробнее</span>
+            </a>
+          </li>
+          <li class="section-examp__item card ex5">
+            <img class="card__image" src="http://placehold.it/400x236" alt="" aria-hidden="true" width="100%" height="236">
+            <div class="card__content card__ex4">
+              <h3 class="card__title margin-reset">Наименовние сувенира</h3>
+              <p class="card__descr margin-reset">
+                <span class="card__param-value">Настольный</span>
+                <span class="card__param-separ"> / </span>
+                <span class="card__param-value">C оранжевой буквой "B"</span>
+              </p>
+              <div class="card__info">
+                <p class="card__price margin-reset">
+                  <span class="card__price-value">3</span>
+                  <span class="card__price-unit">ETF</span>
+                </p>
+                <a href="#" class="card__btn btn link-reset">Купить</a>
+              </div>
+            </div>
+            <a href="#" class="card__link link-reset">
+              <span class="card__btn--primary card__btn btn">Подробнее</span>
+            </a>
+          </li>
+          <li class="section-examp__item card">
+            <img class="card__image" src="http://placehold.it/300x236" alt="" aria-hidden="true" width="100%" height="236">
+            <div class="card__content card__ex2">
+              <h3 class="card__title margin-reset">Наименовние сувенира</h3>
+              <div class="card__info">
+                <div class="card__autor autor">
+                  <span class="autor__icon"></span>
+                  <span class="autor__name">Александр</span>
+                </div>
+                <p class="card__price margin-reset">
+                  <span class="card__price-value">3</span>
+                  <span class="card__price-unit">ETF</span>
+                </p>
+              </div>
+              <!-- <div class="card__links">
+                <a href="#" class="card__btn--primary card__btn btn link-reset">Подробнее</a>
+                <a href="#" class="card__btn btn link-reset">Перейти в магазин</a>
+              </div> -->
+            </div>
+          </li>
+          <li class="section-examp__item card">
+            <img class="card__image" src="http://placehold.it/300x236" alt="" aria-hidden="true" width="100%" height="236">
+            <div class="card__content card__ex2">
+              <h3 class="card__title margin-reset">Наименовние сувенира</h3>
+              <div class="card__info">
+                <div class="card__autor autor">
+                  <span class="autor__icon"></span>
+                  <span class="autor__name">Александр</span>
+                </div>
+                <p class="card__price margin-reset">
+                  <span class="card__price-value">3</span>
+                  <span class="card__price-unit">ETF</span>
+                </p>
+              </div>
+              <div class="card__links">
+                <a href="#" class="card__btn--primary card__btn btn link-reset">Перейти в магазин</a>
+                <!-- <a href="#" class="card__btn btn link-reset">Перейти в магазин</a> -->
+              </div>
+            </div>
+          </li>
+          <!-- <li class="section-examp__item card">
+            <img class="card__image" src="http://placehold.it/300x236" alt="" width="100%" height="236">
             <div class="card__content">
               <h3 class="card__title margin-reset">Наименовние сувенира</h3>
               <p class="card__price margin-reset">
@@ -162,26 +349,12 @@
                 <span class="card__price-unit">₽</span>
               </p>
               <div class="card__links">
-                <a href="#" class="card__btn--primary card__btn btn link-reset">Подробнее</a>
+                <a href="#" class="card__btn--primary card__btn btn link-reset">Перейти в магазин</a>
                 <a href="#" class="card__btn btn link-reset">Купить</a>
               </div>
             </div>
-          </li>
-          <li class="section__item card">
-            <img class="card__image" src="http://placehold.it/300x236" alt="" aria-hidden="true" width="100%" height="236">
-            <div class="card__content">
-              <h3 class="card__title margin-reset">Наименовние сувенира</h3>
-              <p class="card__price margin-reset">
-                <span class="card__price-value">3000</span>
-                <span class="card__price-unit">₽</span>
-              </p>
-              <div class="card__links">
-                <a href="#" class="card__btn--primary card__btn btn link-reset">Подробнее</a>
-                <a href="#" class="card__btn btn link-reset">Купить</a>
-              </div>
-            </div>
-          </li>
-          <li class="section__item card">
+          </li> -->
+          <!-- <li class="section-examp__item card">
             <img class="card__image" src="http://placehold.it/300x236" alt="" width="100%" height="236">
             <div class="card__content">
               <h3 class="card__title margin-reset">Наименовние сувенира</h3>
@@ -194,21 +367,7 @@
                 <a href="#" class="card__btn btn link-reset">Купить</a>
               </div>
             </div>
-          </li>
-          <li class="section__item card">
-            <img class="card__image" src="http://placehold.it/300x236" alt="" width="100%" height="236">
-            <div class="card__content">
-              <h3 class="card__title margin-reset">Наименовние сувенира</h3>
-              <p class="card__price margin-reset">
-                <span class="card__price-value">3000</span>
-                <span class="card__price-unit">₽</span>
-              </p>
-              <div class="card__links">
-                <a href="#" class="card__btn--primary card__btn btn link-reset">Подробнее</a>
-                <a href="#" class="card__btn btn link-reset">Купить</a>
-              </div>
-            </div>
-          </li>
+          </li> -->
         </ul>
         <div class="modals">
           <div class="modals__overlay">
@@ -224,7 +383,7 @@
                     <span class="modal__price-unit">₽</span>
                   </p>
                   <p class="modal__descr margin-reset">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, aliquid eius. Neque, culpa? Nesciunt voluptatibus hic corrupti ullam repellat velit!</p>
-                  <a href="#" class="modal__btn btn link-reset">Купить на OpenSea</a>
+                  <a href="#" class="modal__btn btn link-reset">Перейти в магазин</a>
                 </div>
               </li>
             </ul>
@@ -257,6 +416,8 @@
   <footer class="footer">
     <div class="container"></div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
   <script src="js/main.js"></script>
 </body>
