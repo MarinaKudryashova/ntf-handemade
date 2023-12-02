@@ -301,7 +301,7 @@ body {
   align-items: center;
   /* border-radius: 10px; */
   /* padding: 8px; */
-  color: var(--white-color);
+  color: var(--light-color);
 }
 .promo__social-icon {
   /* margin-right: 16px; */
@@ -429,6 +429,7 @@ body {
 .card {
   background: rgb(0, 0, 0);
   box-shadow: 12px 18px 30px rgba(225, 225, 225, 0.1);
+  border: 2px solid transparent;
   border-radius: 20px;
 }
 .card__image {
@@ -494,7 +495,8 @@ body {
 .card__ex1 p,
 .card__ex2 p,
 .card__ex3 p,
-.card__ex4 p {
+.card__ex4 p,
+.card__ex5 p {
   margin-bottom: 0;
 }
 .autor {
@@ -532,8 +534,11 @@ body {
   inset: 0;
   width: 100%;
   height: 100%;
+  /* border: 1px solid var(--accent-color); */
+  /* border: 1px solid rgba(217, 220, 49, 0.7); */
   border-radius: 20px;
   background-color: rgb(0, 0, 0, 0.8);
+  /* box-shadow: 12px 15px 30px rgba(217, 220, 49, 0.1); */
   cursor: pointer;
   opacity: 0;
   visibility: hidden;
@@ -556,14 +561,53 @@ body {
   opacity: 1;
   visibility: visible;
 }
-.ex4:hover .card__btn--primary,
-.ex5:hover .card__btn--primary {
+.ex4:hover .card__btn--primary {
   opacity: 1;
   visibility: visible;
 }
-.ex5 {
-  grid-column: 4 span;
+.ex5 .card__link {
+  border: 2px solid var(--accent-color);
+  background-color: transparent;
 }
+.ex5 .card__price {
+  color: var(--white-color);
+}
+.card__price-name {
+  display: block;
+  color: var(--white-color);
+}
+.card__ex5 a {
+  margin: 0;
+}
+/* .ex5 .card__ex5 .card__btn {
+  display: none;
+} */
+.ex5 .card__ex5 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black-color);
+  transition: tratransform .3s ease-in-out;
+
+}
+.ex5 .card__ex5 .card__btn {
+  /* display: none; */
+  align-self: center;
+  height: 0;;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s ease-in-out, height .3s ease-in-out;
+}
+.ex5:hover .card__ex5>.card__btn {
+  /* display: inline-block; */
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+}
+.ex5:hover .card__ex5 {
+  /* position: absolute; */
+  transform: translateY(-5%);
+}
+
 
 
 .modals {
