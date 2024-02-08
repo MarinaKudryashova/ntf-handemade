@@ -214,14 +214,99 @@
             </div>
           </li>
         </ul> -->
-        <div class="about__video video-block">
+        <!-- <div class="about__video video-block">
           <button class="btn-reset video-block__play" aria-label="Play video">
             <svg>
               <use xlink:href="img/sprite.svg#play"></use>
             </svg>
           </button>
           <video src="video/about-video-2.mp4" class="video-block__content" loop preload="metadata"></video>
+        </div> -->
+
+        <div class="about__sliderblock">
+          <div class="swiper about-video-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="about__video video-block">
+                  <button class="btn-reset video-block__play" aria-label="Play video">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#play"></use>
+                    </svg>
+                  </button>
+                  <video src="video/about-video-1.mp4" class="video-block__content" loop preload="metadata"></video>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="about__video video-block">
+                  <button class="btn-reset video-block__play" aria-label="Play video">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#play"></use>
+                    </svg>
+                  </button>
+                  <video src="video/about-video-2.mp4" class="video-block__content" loop preload="metadata"></video>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="about__video video-block">
+                  <button class="btn-reset video-block__play" aria-label="Play video">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#play"></use>
+                    </svg>
+                  </button>
+                  <video src="video/about-video-3.mp4" class="video-block__content" loop preload="metadata"></video>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="about__video video-block">
+                  <button class="btn-reset video-block__play" aria-label="Play video">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#play"></use>
+                    </svg>
+                  </button>
+                  <video src="video/about-video-4.mp4" class="video-block__content" loop preload="metadata"></video>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper about-video-slider-nav">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="about__preview-video">
+                  <picture>
+                    <source srcset="img/about/preview-video-1.webp" type="image/webp">
+                    <img loading="lazy" src="img/about/preview-video-1.jpg" width="100%" height="114" alt="video-1">
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="about__preview-video">
+                  <picture>
+                    <source srcset="img/about/preview-video-2.webp" type="image/webp">
+                    <img loading="lazy" src="img/about/preview-video-2.jpg" width="100%" height="114" alt="video-1">
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="about__preview-video">
+                  <picture>
+                    <source srcset="img/about/preview-video-3.webp" type="image/webp">
+                    <img loading="lazy" src="img/about/preview-video-3.jpg" width="100%" height="114" alt="video-1">
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="about__preview-video">
+                  <picture>
+                    <source srcset="img/about/preview-video-4.webp" type="image/webp">
+                    <img loading="lazy" src="img/about/preview-video-4.jpg" width="100%" height="114" alt="video-1">
+                  </picture>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
+
       </div>
       <ul class="about__list list-reset">
         <li class="about__item">
@@ -264,10 +349,10 @@
     <ul class="workshops__list list-reset grid">
       <li class="workshops__item">
         <article class="workshops-card">
-          <div class="workshops-card__container">
-            <picture class="workshops-card__image">
+          <div class="workshops-card__image">
+            <picture>
               <source srcset="img/prodacts/bitcoin.webp" type="image/webp">
-              <img loading="lazy" src="img/prodacts/bitcoin.png" width="180" height="190" alt="Биткойн деревянны настольный">
+              <img loading="lazy" src="img/prodacts/bitcoin.jpg" width="100%" height="220" alt="Биткойн деревянны настольный">
             </picture>
           </div>
           <div class="workshops-card__content">
@@ -278,7 +363,7 @@
               <span class="price__unit">ETF</span>
             </div>
             <div class="workshops-card__btns">
-              <a href="page-dev.html" class="workshops-card__btn btn btn--stroke link-reset">Подробнее</a>
+              <a href="page-prodact-card.html" class="workshops-card__btn btn btn--stroke link-reset">Подробнее</a>
               <a href="https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/64312267644593046051625725131144706368348697621428820026599738706165109882881" target="_blank" class="workshops-card__btn btn btn--fill link-reset">Купить</a>
             </div>
           </div>
@@ -286,10 +371,10 @@
       </li>
       <li class="workshops__item">
         <article class="workshops-card">
-          <div class="workshops-card__container">
-            <picture class="workshops-card__image">
+          <div class="workshops-card__image">
+            <picture>
               <source srcset="img/prodacts/bitcoin-orange.webp" type="image/webp">
-              <img loading="lazy" src="img/prodacts/bitcoin-orange.png" width="180" height="190" alt="Биткойн деревянны настольный">
+              <img loading="lazy" src="img/prodacts/bitcoin-orange.jpg" width="100%" height="220" alt="Биткойн деревянны настольный">
             </picture>
           </div>
           <div class="workshops-card__content">
@@ -308,10 +393,10 @@
       </li>
       <li class="workshops__item">
         <article class="workshops-card">
-          <div class="workshops-card__container">
-            <picture class="workshops-card__image">
+          <div class="workshops-card__image">
+            <picture>
               <source srcset="img/prodacts/bitcoin-gold.webp" type="image/webp">
-              <img loading="lazy" src="img/prodacts/bitcoin-gold.png" width="180" height="190" alt="Биткойн деревянны настольный">
+              <img loading="lazy" src="img/prodacts/bitcoin-gold.jpg" width="100%" height="220" alt="Биткойн деревянны настольный">
             </picture>
           </div>
           <div class="workshops-card__content">
@@ -330,10 +415,10 @@
       </li>
       <li class="workshops__item">
         <article class="workshops-card">
-          <div class="workshops-card__container">
-            <picture class="workshops-card__image">
+          <div class="workshops-card__image">
+            <picture>
               <source srcset="img/prodacts/bitcoin-silver.webp" type="image/webp">
-              <img loading="lazy" src="img/prodacts/bitcoin-silver.png" width="180" height="190" alt="Биткойн деревянны настольный">
+              <img loading="lazy" src="img/prodacts/bitcoin-silver.jpg" width="100%" height="220" alt="Биткойн деревянны настольный">
             </picture>
           </div>
           <div class="workshops-card__content">
@@ -352,10 +437,10 @@
       </li>
       <li class="workshops__item">
         <article class="workshops-card">
-          <div class="workshops-card__container">
-            <picture class="workshops-card__image">
+          <div class="workshops-card__image">
+            <picture>
               <source srcset="img/prodacts/bitcoin-2.webp" type="image/webp">
-              <img loading="lazy" src="img/prodacts/bitcoin-2.png" width="180" height="190" alt="Биткойн деревянны настольный">
+              <img loading="lazy" src="img/prodacts/bitcoin-2.jpg" width="100%" height="220" alt="Биткойн деревянны настольный">
             </picture>
           </div>
           <div class="workshops-card__content">
@@ -374,10 +459,10 @@
       </li>
       <li class="workshops__item">
         <article class="workshops-card">
-          <div class="workshops-card__container">
-            <picture class="workshops-card__image">
+          <div class="workshops-card__image">
+            <picture>
               <source srcset="img/prodacts/bitcoin-gold-2.webp" type="image/webp">
-              <img loading="lazy" src="img/prodacts/bitcoin-gold-2.png" width="180" height="190" alt="Биткойн деревянны настольный">
+              <img loading="lazy" src="img/prodacts/bitcoin-gold-2.jpg" width="100%" height="220" alt="Биткойн деревянны настольный">
             </picture>
           </div>
           <div class="workshops-card__content">
@@ -396,10 +481,10 @@
       </li>
       <li class="workshops__item">
         <article class="workshops-card">
-          <div class="workshops-card__container">
-            <picture class="workshops-card__image">
+          <div class="workshops-card__image">
+            <picture>
               <source srcset="img/prodacts/bitcoin-silver-2.webp" type="image/webp">
-              <img loading="lazy" src="img/prodacts/bitcoin-silver-2.png" width="180" height="190" alt="Биткойн деревянны настольный">
+              <img loading="lazy" src="img/prodacts/bitcoin-silver-2.jpg" width="100%" height="220" alt="Биткойн деревянны настольный">
             </picture>
           </div>
           <div class="workshops-card__content">
@@ -418,10 +503,10 @@
       </li>
       <li class="workshops__item">
         <article class="workshops-card">
-          <div class="workshops-card__container">
-            <picture class="workshops-card__image">
+          <div class="workshops-card__image">
+            <picture>
               <source srcset="img/prodacts/bitcoin-orange-2.webp" type="image/webp">
-              <img loading="lazy" src="img/prodacts/bitcoin-orange-2.png" width="180" height="190" alt="Биткойн деревянны настольный">
+              <img loading="lazy" src="img/prodacts/bitcoin-orange-2.jpg" width="100%" height="220" alt="Биткойн деревянны настольный">
             </picture>
           </div>
           <div class="workshops-card__content">
@@ -441,10 +526,10 @@
 
       <li class="workshops__item">
         <article class="workshops-card">
-          <div class="workshops-card__container">
-            <picture class="workshops-card__image">
+          <div class="workshops-card__image">
+            <picture>
               <source srcset="img/prodacts/cross.webp" type="image/webp">
-              <img loading="lazy" src="img/prodacts/cross.png" width="180" height="190" alt="Биткойн деревянны настольный">
+              <img loading="lazy" src="img/prodacts/cross.jpg" width="100%" height="220" alt="Биткойн деревянны настольный">
             </picture>
           </div>
           <div class="workshops-card__content">
@@ -463,10 +548,10 @@
       </li>
       <li class="workshops__item">
         <article class="workshops-card">
-          <div class="workshops-card__container">
-            <picture class="workshops-card__image">
+          <div class="workshops-card__image">
+            <picture>
               <source srcset="img/prodacts/panel.webp" type="image/webp">
-              <img loading="lazy" src="img/prodacts/panel.png" width="180" height="190" alt="Биткойн деревянны настольный">
+              <img loading="lazy" src="img/prodacts/panel.jpg" width="100%" height="220" alt="Биткойн деревянны настольный">
             </picture>
           </div>
           <div class="workshops-card__content">
@@ -485,10 +570,10 @@
       </li>
       <li class="workshops__item">
         <article class="workshops-card">
-          <div class="workshops-card__container">
-            <picture class="workshops-card__image">
+          <div class="workshops-card__image">
+            <picture>
               <source srcset="img/prodacts/watch-1.webp" type="image/webp">
-              <img loading="lazy" src="img/prodacts/watch-1.png" width="180" height="190" alt="Биткойн деревянны настольный">
+              <img loading="lazy" src="img/prodacts/watch-1.jpg" width="100%" height="220" alt="Биткойн деревянны настольный">
             </picture>
           </div>
           <div class="workshops-card__content">
@@ -507,10 +592,10 @@
       </li>
       <li class="workshops__item">
         <article class="workshops-card">
-          <div class="workshops-card__container">
-            <picture class="workshops-card__image">
+          <div class="workshops-card__image">
+            <picture>
               <source srcset="img/prodacts/watch-2.webp" type="image/webp">
-              <img loading="lazy" src="img/prodacts/watch-2.png" width="180" height="190" alt="Биткойн деревянны настольный">
+              <img loading="lazy" src="img/prodacts/watch-2.jpg" width="100%" height="220" alt="Биткойн деревянны настольный">
             </picture>
           </div>
           <div class="workshops-card__content">
@@ -539,10 +624,10 @@
     <ul class="workshops__list list-reset grid">
       <li class="workshops__item">
         <article class="workshops-card">
-          <div class="workshops-card__container">
-            <picture class="workshops-card__image">
+          <div class="workshops-card__image">
+            <picture>
               <source srcset="img/prodacts/picture-1.webp" type="image/webp">
-              <img loading="lazy" src="img/prodacts/picture-1.png" width="180" height="190" alt="Россия, Алтай, Гора Белуха">
+              <img loading="lazy" src="img/prodacts/picture-1.jpg" width="100%" height="220" alt="Биткойн деревянны настольный">
             </picture>
           </div>
           <div class="workshops-card__content">
@@ -561,10 +646,10 @@
       </li>
       <li class="workshops__item">
         <article class="workshops-card">
-          <div class="workshops-card__container">
-            <picture class="workshops-card__image">
+          <div class="workshops-card__image">
+            <picture>
               <source srcset="img/prodacts/picture-2.webp" type="image/webp">
-              <img loading="lazy" src="img/prodacts/picture-2.png" width="180" height="190" alt="Россия, Алтай, Гора Белуха">
+              <img loading="lazy" src="img/prodacts/picture-2.jpg" width="100%" height="220" alt="Биткойн деревянны настольный">
             </picture>
           </div>
           <div class="workshops-card__content">
@@ -583,10 +668,10 @@
       </li>
       <li class="workshops__item">
         <article class="workshops-card">
-          <div class="workshops-card__container">
-            <picture class="workshops-card__image">
+          <div class="workshops-card__image">
+            <picture>
               <source srcset="img/prodacts/picture-3.webp" type="image/webp">
-              <img loading="lazy" src="img/prodacts/picture-3.png" width="180" height="190" alt="Россия, Алтай, Гора Белуха">
+              <img loading="lazy" src="img/prodacts/picture-3.jpg" width="100%" height="220" alt="Биткойн деревянны настольный">
             </picture>
           </div>
           <div class="workshops-card__content">
@@ -605,10 +690,10 @@
       </li>
       <li class="workshops__item">
         <article class="workshops-card">
-          <div class="workshops-card__container">
-            <picture class="workshops-card__image">
+          <div class="workshops-card__image">
+            <picture>
               <source srcset="img/prodacts/picture-4.webp" type="image/webp">
-              <img loading="lazy" src="img/prodacts/picture-4.png" width="180" height="190" alt="Россия, Алтай, Гора Белуха">
+              <img loading="lazy" src="img/prodacts/picture-4.jpg" width="100%" height="220" alt="Биткойн деревянны настольный">
             </picture>
           </div>
           <div class="workshops-card__content">
@@ -636,10 +721,10 @@
     <ul class="workshops__list list-reset grid">
       <li class="workshops__item">
         <article class="workshops-card">
-          <div class="workshops-card__container">
-            <picture class="workshops-card__image">
+          <div class="workshops-card__image">
+            <picture>
               <source srcset="img/prodacts/ecobag-1.webp" type="image/webp">
-              <img loading="lazy" src="img/prodacts/ecobag-1.jpg" width="180" height="190" alt="Авоська-крупная сетка">
+              <img loading="lazy" src="img/prodacts/ecobag-1.jpg" width="100%" height="220" alt="Биткойн деревянны настольный">
             </picture>
           </div>
           <div class="workshops-card__content">
@@ -658,10 +743,10 @@
       </li>
       <li class="workshops__item">
         <article class="workshops-card">
-          <div class="workshops-card__container">
-            <picture class="workshops-card__image">
+          <div class="workshops-card__image">
+            <picture>
               <source srcset="img/prodacts/ecobag-2.webp" type="image/webp">
-              <img loading="lazy" src="img/prodacts/ecobag-2.png" width="180" height="190" alt="Авоська-крупная сетка">
+              <img loading="lazy" src="img/prodacts/ecobag-2.jpg" width="100%" height="220" alt="Биткойн деревянны настольный">
             </picture>
           </div>
           <div class="workshops-card__content">
@@ -680,10 +765,10 @@
       </li>
       <li class="workshops__item">
         <article class="workshops-card">
-          <div class="workshops-card__container">
-            <picture class="workshops-card__image">
+          <div class="workshops-card__image">
+            <picture>
               <source srcset="img/prodacts/ecobag-3.webp" type="image/webp">
-              <img loading="lazy" src="img/prodacts/ecobag-3.png" width="180" height="190" alt="Авоська-крупная сетка">
+              <img loading="lazy" src="img/prodacts/ecobag-3.png" width="100%" height="220" alt="Биткойн деревянны настольный">
             </picture>
           </div>
           <div class="workshops-card__content">
@@ -702,10 +787,10 @@
       </li>
       <li class="workshops__item">
         <article class="workshops-card">
-          <div class="workshops-card__container">
-            <picture class="workshops-card__image">
+          <div class="workshops-card__image">
+            <picture>
               <source srcset="img/prodacts/ecobag-4.webp" type="image/webp">
-              <img loading="lazy" src="img/prodacts/ecobag-4.png" width="180" height="190" alt="Авоська-крупная сетка">
+              <img loading="lazy" src="img/prodacts/ecobag-4.png" width="100%" height="220" alt="Биткойн деревянны настольный">
             </picture>
           </div>
           <div class="workshops-card__content">
@@ -735,10 +820,10 @@
     <ul class="workshops__list list-reset grid">
       <li class="workshops__item">
         <article class="workshops-card">
-          <div class="workshops-card__container">
-            <picture class="workshops-card__image">
+          <div class="workshops-card__image">
+            <picture>
               <source srcset="img/prodacts/special-1.webp" type="image/webp">
-              <img loading="lazy" src="img/prodacts/special-1.jpg" width="180" height="190" alt="Шапки вязанные">
+              <img loading="lazy" src="img/prodacts/special-1.jpg" width="100%" height="220" alt="Биткойн деревянны настольный">
             </picture>
           </div>
           <div class="workshops-card__content">
@@ -757,14 +842,14 @@
       </li>
       <li class="workshops__item">
         <article class="workshops-card">
-          <div class="workshops-card__container">
-            <picture class="workshops-card__image">
+          <div class="workshops-card__image">
+            <picture>
               <source srcset="img/prodacts/special-2.webp" type="image/webp">
-              <img loading="lazy" src="img/prodacts/special-2.png" width="180" height="190" alt="Авоська-крупная сетка">
+              <img loading="lazy" src="img/prodacts/special-2.jpg" width="100%" height="220" alt="Биткойн деревянны настольный">
             </picture>
           </div>
           <div class="workshops-card__content">
-            <h3 class="workshops-card__title">Игрушка Котик</h3>
+            <h3 class="workshops-card__title">Игрушка Котики</h3>
             <p class="workshops-card__descr">Керамика</p>
             <div class="workshops-card__price">
               <span class="price__value">1</span>
@@ -777,12 +862,12 @@
           </div>
         </article>
       </li>
-      <li class="workshops__item">
+      <!-- <li class="workshops__item">
         <article class="workshops-card">
-          <div class="workshops-card__container">
-            <picture class="workshops-card__image">
+          <div class="workshops-card__image">
+            <picture>
               <source srcset="img/prodacts/special-3.webp" type="image/webp">
-              <img loading="lazy" src="img/prodacts/special-3.png" width="180" height="190" alt="Авоська-крупная сетка">
+              <img loading="lazy" src="img/prodacts/special-3.jpg" width="100%" height="220" alt="Биткойн деревянны настольный">
             </picture>
           </div>
           <div class="workshops-card__content">
@@ -798,17 +883,17 @@
             </div>
           </div>
         </article>
-      </li>
+      </li> -->
       <li class="workshops__item">
         <article class="workshops-card">
-          <div class="workshops-card__container">
-            <picture class="workshops-card__image">
-              <source srcset="img/prodacts/special-4.webp" type="image/webp">
-              <img loading="lazy" src="img/prodacts/special-4.png" width="180" height="190" alt="Авоська-крупная сетка">
+          <div class="workshops-card__image">
+            <picture>
+              <source srcset="img/prodacts/special-3.webp" type="image/webp">
+              <img loading="lazy" src="img/prodacts/special-3.jpg" width="100%" height="220" alt="Биткойн деревянны настольный">
             </picture>
           </div>
           <div class="workshops-card__content">
-            <h3 class="workshops-card__title">Игрушка Мышка</h3>
+            <h3 class="workshops-card__title">Игрушка Мышки</h3>
             <p class="workshops-card__descr">Керамика</p>
             <div class="workshops-card__price">
               <span class="price__value">1</span>
@@ -821,12 +906,12 @@
           </div>
         </article>
       </li>
-      <li class="workshops__item">
+      <!-- <li class="workshops__item">
         <article class="workshops-card">
           <div class="workshops-card__container">
             <picture class="workshops-card__image">
               <source srcset="img/prodacts/special-5.webp" type="image/webp">
-              <img loading="lazy" src="img/prodacts/special-5.png" width="180" height="190" alt="Авоська-крупная сетка">
+              <img loading="lazy" src="img/prodacts/special-5.png" width="180" height="220" alt="Авоська-крупная сетка">
             </picture>
           </div>
           <div class="workshops-card__content">
@@ -842,18 +927,62 @@
             </div>
           </div>
         </article>
-      </li>
+      </li> -->
       <li class="workshops__item">
         <article class="workshops-card">
-          <div class="workshops-card__container">
-            <picture class="workshops-card__image">
-              <source srcset="img/prodacts/special-6.webp" type="image/webp">
-              <img loading="lazy" src="img/prodacts/special-6.png" width="180" height="190" alt="Авоська-крупная сетка">
+          <div class="workshops-card__image">
+            <picture>
+              <source srcset="img/prodacts/special-4.webp" type="image/webp">
+              <img loading="lazy" src="img/prodacts/special-4.jpg" width="100%" height="220" alt="Биткойн деревянны настольный">
             </picture>
           </div>
           <div class="workshops-card__content">
             <h3 class="workshops-card__title">Игрушка Волк</h3>
             <p class="workshops-card__descr">Войлок</p>
+            <div class="workshops-card__price">
+              <span class="price__value">1</span>
+              <span class="price__unit">ETF</span>
+            </div>
+            <div class="workshops-card__btns">
+              <a href="page-dev.html" class="workshops-card__btn btn btn--stroke link-reset">Подробнее</a>
+              <a href="#" class="workshops-card__btn btn btn--fill link-reset">Купить</a>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="workshops__item">
+        <article class="workshops-card">
+          <div class="workshops-card__image">
+            <picture>
+              <source srcset="img/prodacts/special-5.webp" type="image/webp">
+              <img loading="lazy" src="img/prodacts/special-5.jpg" width="100%" height="220" alt="Биткойн деревянны настольный">
+            </picture>
+          </div>
+          <div class="workshops-card__content">
+            <h3 class="workshops-card__title">Игрушка Чебурашка</h3>
+            <p class="workshops-card__descr">Холофайбер, акрил</p>
+            <div class="workshops-card__price">
+              <span class="price__value">1</span>
+              <span class="price__unit">ETF</span>
+            </div>
+            <div class="workshops-card__btns">
+              <a href="page-dev.html" class="workshops-card__btn btn btn--stroke link-reset">Подробнее</a>
+              <a href="#" class="workshops-card__btn btn btn--fill link-reset">Купить</a>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="workshops__item">
+        <article class="workshops-card">
+          <div class="workshops-card__image">
+            <picture>
+              <source srcset="img/prodacts/special-6.webp" type="image/webp">
+              <img loading="lazy" src="img/prodacts/special-6.jpg" width="100%" height="220" alt="Биткойн деревянны настольный">
+            </picture>
+          </div>
+          <div class="workshops-card__content">
+            <h3 class="workshops-card__title">Игрушки герои из м/ф Простаквашино</h3>
+            <p class="workshops-card__descr">Холофайбер, акрил</p>
             <div class="workshops-card__price">
               <span class="price__value">1</span>
               <span class="price__unit">ETF</span>
