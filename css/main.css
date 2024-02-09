@@ -434,7 +434,7 @@ a {
   top: 0;
   left: 0;
   z-index: 3;
-  padding: 50px 0;
+  padding: 20px 0;
   width: 100%;
   color: #fff;
 }
@@ -522,7 +522,7 @@ a {
 }
 
 .promo {
-  padding: 100px 0 0;
+  padding: 136px 0 0;
   color: #fff;
   background-color: #15161b;
   background-image: url(../img/promo/promo-bg.svg);
@@ -537,6 +537,8 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-height: 530px;
+  height: calc(100vh - 136px);
 }
 .promo__content {
   position: relative;
@@ -572,7 +574,7 @@ a {
 }
 .promo__descr {
   margin: 0;
-  margin-bottom: 56px;
+  margin-bottom: 35px;
   max-width: 616px;
   font-weight: 500;
   font-size: 18px;
@@ -646,11 +648,9 @@ a {
 .promo__img {
   -o-object-fit: cover;
   object-fit: cover;
-  height: auto;
-  width: 100%;
-  -webkit-transform: scale(1.1) translateY(-1%);
-  -ms-transform: scale(1.1) translateY(-1%);
-  transform: scale(1.1) translateY(-1%);
+  -webkit-transform: scale(1.5) translate(5%, -1%);
+  -ms-transform: scale(1.5) translate(5%, -1%);
+  transform: scale(1.5) translate(5%, -1%);
 }
 
 .promo__link.focus-visible {
