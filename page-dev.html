@@ -34,13 +34,13 @@
       <svg class="logo__img" width="188" height="80" alt="логотип High pass">
         <use xlink:href="img/sprite.svg#logo"></use>
       </svg>
-      <!-- <img class="logo__img" src="img/logo.svg" alt="логотип High pass" width="188" height="60"> -->
+      <!-- <img class="logo__img" src="img/logo.svg" alt="логотип High pass" width="188" height="800"> -->
     </a>
     <nav class="nav" title="main navigation">
-      <ul class="list-reset nav__list flex">
+      <ul class="list-reset nav__list">
         <li class="nav__item"><a href="index.html#about" class="nav__link link link-reset" data-menu-item data-scroll>О проекте</a></li>
         <li class="nav__item nav__item--submenu">
-          <a href="#" class="nav__link link-reset link nav__link--submenu">Мастерские</a>
+          <a href="#" class="nav__link link-reset link nav__link--submenu" data-submenu>Мастерские</a>
           <ul class="submenu list-reset">
             <li class="submenu__item"><a class="submenu__link link" href="index.html#help-neighbour">Помоги ближнему</a></li>
             <li class="submenu__item"><a class="submenu__link link" href="index.html#palette-of-silence">Палитра тишины</a></li>
@@ -50,7 +50,7 @@
         </li>
         <li class="nav__item"><a href="index.html#contacts" class="nav__link link link-reset" data-menu-item data-scroll>Контакты</a></li>
         <li class="nav__item"><a href="аltai.html" class="nav__link link link-reset">Алтай без ограничений</a></li>
-        <li class="nav__item nav__item--submenu">
+        <!-- <li class="nav__item nav__item--submenu">
           <a href="#" class="nav__link link-reset link nav__link--submenu">
             <svg width="56" height="56">
               <use xlink:href="img/sprite.svg#social"></use>
@@ -86,15 +86,57 @@
               </a>
             </li>
           </ul>
-        </li>
-        <li class="nav__item">
+        </li> -->
+        <!-- <li class="nav__item">
           <div class="lang">
             <a href="#" class="lang__link lang__link--current link-reset">Рус</a>
             <span>/</span>
             <a href="#/en" class="lang__link link-reset">Eng</a>
           </div>
-          </li>
+          </li> -->
       </ul>
+      <div class="nav__item">
+        <a href="#" class="nav__link link-reset link" data-submenu>
+          <svg width="56" height="56">
+            <use xlink:href="img/sprite.svg#social"></use>
+          </svg>
+        </a>
+        <ul class="submenu list-reset" title="social navigation">
+          <li class="submenu__item">
+            <a href="https://www.facebook.com/altai.antonenko" target="_blank" class="submenu__link link" aria-label="Наша страничка в Фейсбуке">
+              <svg width="35" height="35">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="submenu__item">
+            <a href="https://vk.com/altai.antonenko" target="_blank" class="submenu__link link" aria-label="Наша страничка во Вконтакте">
+              <svg width="45" height="26">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="submenu__item">
+            <a href="https://twitter.com/NFT_Hend_Made" target="_blank" class="submenu__link link" aria-label="Наша страничка в Твиттере">
+              <svg width="35" height="35">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="submenu__item">
+            <a href="https://www.instagram.com/altai_bez_ogranichenj" target="_blank" class="submenu__link link" aria-label="Наша страничка в Инстаграме">
+              <svg class="promo__icon" width="35" height="35">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav__item lang">
+        <a href="#" class="lang__link lang__link--current link-reset">Рус</a>
+        <span>/</span>
+        <a href="#/en" class="lang__link link-reset">Eng</a>
+      </div>
     </nav>
     <!-- <div class="switcher">
       <input id="lang" class="switcher__input visually-hidden" type="checkbox" checked>

@@ -34,13 +34,13 @@
       <svg class="logo__img" width="188" height="80" alt="логотип High pass">
         <use xlink:href="img/sprite.svg#logo"></use>
       </svg>
-      <!-- <img class="logo__img" src="img/logo.svg" alt="логотип High pass" width="188" height="60"> -->
+      <!-- <img class="logo__img" src="img/logo.svg" alt="логотип High pass" width="188" height="800"> -->
     </a>
     <nav class="nav" title="main navigation">
-      <ul class="list-reset nav__list flex">
+      <ul class="list-reset nav__list">
         <li class="nav__item"><a href="index.html#about" class="nav__link link link-reset" data-menu-item data-scroll>О проекте</a></li>
         <li class="nav__item nav__item--submenu">
-          <a href="#" class="nav__link link-reset link nav__link--submenu">Мастерские</a>
+          <a href="#" class="nav__link link-reset link nav__link--submenu" data-submenu>Мастерские</a>
           <ul class="submenu list-reset">
             <li class="submenu__item"><a class="submenu__link link" href="index.html#help-neighbour">Помоги ближнему</a></li>
             <li class="submenu__item"><a class="submenu__link link" href="index.html#palette-of-silence">Палитра тишины</a></li>
@@ -50,7 +50,7 @@
         </li>
         <li class="nav__item"><a href="index.html#contacts" class="nav__link link link-reset" data-menu-item data-scroll>Контакты</a></li>
         <li class="nav__item"><a href="аltai.html" class="nav__link link link-reset">Алтай без ограничений</a></li>
-        <li class="nav__item nav__item--submenu">
+        <!-- <li class="nav__item nav__item--submenu">
           <a href="#" class="nav__link link-reset link nav__link--submenu">
             <svg width="56" height="56">
               <use xlink:href="img/sprite.svg#social"></use>
@@ -86,15 +86,57 @@
               </a>
             </li>
           </ul>
-        </li>
-        <li class="nav__item">
+        </li> -->
+        <!-- <li class="nav__item">
           <div class="lang">
             <a href="#" class="lang__link lang__link--current link-reset">Рус</a>
             <span>/</span>
             <a href="#/en" class="lang__link link-reset">Eng</a>
           </div>
-          </li>
+          </li> -->
       </ul>
+      <div class="nav__item">
+        <a href="#" class="nav__link link-reset link" data-submenu>
+          <svg width="56" height="56">
+            <use xlink:href="img/sprite.svg#social"></use>
+          </svg>
+        </a>
+        <ul class="submenu list-reset" title="social navigation">
+          <li class="submenu__item">
+            <a href="https://www.facebook.com/altai.antonenko" target="_blank" class="submenu__link link" aria-label="Наша страничка в Фейсбуке">
+              <svg width="35" height="35">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="submenu__item">
+            <a href="https://vk.com/altai.antonenko" target="_blank" class="submenu__link link" aria-label="Наша страничка во Вконтакте">
+              <svg width="45" height="26">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="submenu__item">
+            <a href="https://twitter.com/NFT_Hend_Made" target="_blank" class="submenu__link link" aria-label="Наша страничка в Твиттере">
+              <svg width="35" height="35">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="submenu__item">
+            <a href="https://www.instagram.com/altai_bez_ogranichenj" target="_blank" class="submenu__link link" aria-label="Наша страничка в Инстаграме">
+              <svg class="promo__icon" width="35" height="35">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav__item lang">
+        <a href="#" class="lang__link lang__link--current link-reset">Рус</a>
+        <span>/</span>
+        <a href="#/en" class="lang__link link-reset">Eng</a>
+      </div>
     </nav>
     <!-- <div class="switcher">
       <input id="lang" class="switcher__input visually-hidden" type="checkbox" checked>
@@ -109,47 +151,11 @@
 
     <main class="main">
       <section class="promo">
-  <div class="promo__container container flex">
+  <div class="promo__container container">
     <div class="promo__content">
       <h1 class="promo__title"><span class="promo__title promo__title--ofset">Hand-Made </span>сувениры</h1>
-      <!-- <h1 class="promo__title"><span class="promo__title promo__title--ofset">NFT-Hand-Made </span>сувениры</h1> -->
-      <!-- <p class="promo__descr">Добро пожаловать в&nbsp;NFT Hand Made&nbsp;&mdash; уникальный магазин на&nbsp;OpenSea. Здесь вы&nbsp;можете не&nbsp;только приобрести крутой сувенир ручной работы в&nbsp;виде деревянного bitcoin, но&nbsp;и&nbsp;помочь людям с&nbsp;ограниченными возможностями. Ведь все изделия, представленные в&nbsp;данном разделе, сделаны их&nbsp;талантливыми руками.</p> -->
-      <!-- <p class="promo__descr">Здесь приобретая крутой сувенир ручной работы вы&nbsp;помогаете людям с&nbsp;ограниченными возможностями.<br> <br>Ведь все изделия, представленные в нашем магазине, сделаны их талантливыми руками.</p> -->
       <p class="promo__descr">Приобретая NFT-сувенир вы помогаете людям с ограниченными возможностями, ведь все изделия, представленные в нашем магазине, сделаны их талантливыми руками</p>
-      <div class="promo__backlinks flex">
-        <a href="https://opensea.io/NFT-Hand-Made" class="promo__btn btn btn--fill" target="_blank">Перейти в магазин</a>
-        <!-- <ul class="promo__list list-reset flex">
-          <li class="promo__item">
-            <a href="https://twitter.com/NFT_Hend_Made" class="promo__link link-reset" target="_blank" aria-label="Перейти на нашу страницу в twitter">
-              <svg class="promo__icon" width="35" height="35">
-                <use xlink:href="img/sprite.svg#twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="promo__item">
-            <a href="https://www.facebook.com/altai.antonenko" class="promo__link link-reset" target="_blank" aria-label="Перейти на нашу страницу в facebook">
-              <svg class="promo__icon" width="35" height="35">
-                <use xlink:href="img/sprite.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="promo__item">
-            <a href="https://www.instagram.com/altai_bez_ogranichenj" class="promo__link link-reset" target="_blank" aria-label="Перейти на нашу страницу в instagram">
-              <svg class="promo__icon" width="35" height="35">
-                <use xlink:href="img/sprite.svg#instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="promo__item">
-            <a href="#" class="promo__link link-reset" target="_blank" aria-label="Перейти на нашу страницу в ВКонтакте">
-              <svg class="promo__icon" width="45" height="26">
-                <use xlink:href="img/sprite.svg#vk"></use>
-              </svg>
-            </a>
-          </li>
-
-        </ul> -->
-      </div>
+      <a href="https://opensea.io/NFT-Hand-Made" class="promo__btn btn btn--fill" target="_blank">Перейти в магазин</a>
     </div>
     <div class="promo__image">
       <!-- <picture> -->
@@ -172,57 +178,6 @@
           <p>Мы сотрудничаем с инвалидами по зрению, по слуху, с семьями, имеющими детей с ментальными нарушениями.</p>
           <p>Верим, что особенные люди по-особенному талантливые!</p>
         </div>
-        <!-- <ul class="about__video about-video list-reset">
-          <li class="about-video__item">
-            <div class="about-video__block video-block">
-              <button class="btn-reset video-block__play" aria-label="Play video">
-                <svg>
-                  <use xlink:href="img/sprite.svg#play"></use>
-                </svg>
-              </button>
-              <video src="video/about-video-2.mp4" class="video-block__content" loop preload="metadata"></video>
-            </div>
-          </li>
-          <li class="about-video__item">
-            <div class="about-video__block video-block">
-              <button class="btn-reset video-block__play" aria-label="Play video">
-                <svg>
-                  <use xlink:href="img/sprite.svg#play"></use>
-                </svg>
-              </button>
-              <video src="video/about-video-1.mp4" class="video-block__content" loop preload="metadata"></video>
-            </div>
-          </li>
-          <li class="about-video__item">
-            <div class="about-video__block video-block">
-              <button class="btn-reset video-block__play" aria-label="Play video">
-                <svg>
-                  <use xlink:href="img/sprite.svg#play"></use>
-                </svg>
-              </button>
-              <video src="video/about-painting.mp4" class="video-block__content" loop preload="metadata"></video>
-            </div>
-          </li>
-          <li class="about-video__item">
-            <div class="about-video__block video-block">
-              <button class="btn-reset video-block__play" aria-label="Play video">
-                <svg>
-                  <use xlink:href="img/sprite.svg#play"></use>
-                </svg>
-              </button>
-              <video src="video/about-bicoint.mp4" class="video-block__content" loop preload="metadata"></video>
-            </div>
-          </li>
-        </ul> -->
-        <!-- <div class="about__video video-block">
-          <button class="btn-reset video-block__play" aria-label="Play video">
-            <svg>
-              <use xlink:href="img/sprite.svg#play"></use>
-            </svg>
-          </button>
-          <video src="video/about-video-2.mp4" class="video-block__content" loop preload="metadata"></video>
-        </div> -->
-
         <div class="about__sliderblock">
           <div class="swiper about-video-slider">
             <div class="swiper-wrapper">
@@ -344,7 +299,7 @@
 
       <section id="help-neighbour"  class="workshops">
   <div class="container">
-    <h2 class="workshops__title">МАСТЕРСКАЯ ПОМОГИ БЛИЖНЕМУ</h2>
+    <h2 class="workshops__title section-title">МАСТЕРСКАЯ ПОМОГИ БЛИЖНЕМУ</h2>
     <p class="workshops__descr section-descr">Люди с ограниченными возможностями здоровья вырезают поделки из дерева, камня, глины, пишет картины, всевозможные украшения и т. д.</p>
     <ul class="workshops__list list-reset grid">
       <li class="workshops__item">
@@ -619,7 +574,7 @@
 
       <section id="palette-of-silence" class="workshops">
   <div class="container">
-    <h2 class="workshops__title">МАСТЕРСКАЯ палитра тишины</h2>
+    <h2 class="workshops__title section-title">МАСТЕРСКАЯ палитра тишины</h2>
     <p class="workshops__descr section-descr">Инвалиды по слуху создают картины на холсте под руководством профессионального художника, создана инклюзивная мастерская для взрослых и детей с нарушением слуха</p>
     <ul class="workshops__list list-reset grid">
       <li class="workshops__item">
@@ -716,7 +671,7 @@
 
       <section id="altai-bag" class="workshops">
   <div class="container">
-    <h2 class="workshops__title">МАСТЕРСКАЯ алтайская авоська</h2>
+    <h2 class="workshops__title section-title">МАСТЕРСКАЯ алтайская авоська</h2>
     <p class="workshops__descr section-descr">Инвалиды по зрению плетут сетки-авоськи, создают сувениры для интерьера</p>
     <ul class="workshops__list list-reset grid">
       <li class="workshops__item">
@@ -813,7 +768,7 @@
 
       <section id="special-workshop" class="workshops">
   <div class="container">
-    <h2 class="workshops__title">МАСТЕРСКАЯ Особая мастерская</h2>
+    <h2 class="workshops__title section-title">МАСТЕРСКАЯ Особая мастерская</h2>
     <p class="workshops__descr section-descr">
       Мамы, воспитывающие инвалидов, изготавливают керамические, войлочные и вязаные изделия. Дети с расстройствами аутистического спектра проходят социальную реабилитацию через творчество с арт-терапевтом
     </p>
